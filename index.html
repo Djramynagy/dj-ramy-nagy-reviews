@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#111111">
+<title>DJ Ramy Nagy | Wedding Reviews</title>
+<style>
+:root{--bg:#0c0c0d;--panel:#171718;--gold:#d6b574;--muted:#bdb7ad;--line:#38332b}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#28221a 0,#0c0c0d 55%);color:#f7f4ee;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif}
+.wrap{max-width:760px;margin:auto;padding:22px 16px 45px}.brand{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:8px 0 20px}.eyebrow{letter-spacing:3px;color:var(--gold);font-size:11px;font-weight:800}.name{font-size:clamp(22px,5vw,34px);font-weight:900;margin:5px 0}.sub{color:var(--muted);font-size:13px}.mark{border:1px solid #6c5937;color:var(--gold);border-radius:50%;width:54px;height:54px;display:grid;place-items:center;font-size:25px}
+.hero{margin:22px 0;border-radius:22px;min-height:210px;padding:30px 22px;background:linear-gradient(110deg,rgba(0,0,0,.88),rgba(22,18,14,.65)),url('https://images.unsplash.com/photo-150 wedding?auto=format&fit=crop&w=1200&q=80');background:linear-gradient(135deg,#211b14,#111 55%,#302719);border:1px solid #3b3123;display:flex;flex-direction:column;justify-content:center}.hero small{color:var(--gold);letter-spacing:2px}.hero h1{font-size:clamp(25px,6vw,40px);margin:9px 0}.hero p{color:#d0cbc3;line-height:1.8;margin:0;max-width:520px}
+.card{background:rgba(23,23,24,.94);border:1px solid var(--line);border-radius:20px;padding:22px;margin:16px 0}.card h2{font-size:20px;margin:0 0 7px}.hint{font-size:13px;color:var(--muted);line-height:1.7}.score{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;margin:18px 0 8px}.score button{border:1px solid #514432;background:#22201c;color:#e6d6b8;border-radius:10px;padding:11px 0;font-weight:800;cursor:pointer}.score button.active,.score button:hover{background:var(--gold);color:#17120b;border-color:var(--gold)}label{display:block;margin:15px 0 7px;font-size:14px;color:#e7dfd2}input,textarea{width:100%;background:#101011;border:1px solid #403a31;border-radius:12px;color:#fff;padding:13px;font:inherit;outline:none}input:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:110px;resize:vertical}.check{display:flex;gap:9px;align-items:flex-start;color:#d2cbc1;font-size:13px;margin-top:14px}.check input{width:auto;margin-top:3px;accent-color:var(--gold)}.btn{width:100%;border:0;border-radius:13px;background:linear-gradient(135deg,#e2c58b,#b38c4b);color:#15110b;font-weight:900;padding:15px;font-size:16px;cursor:pointer;margin-top:18px}.btn:disabled{opacity:.5;cursor:not-allowed}.social{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.social a{display:block;text-align:center;text-decoration:none;border:1px solid #494033;border-radius:12px;padding:12px 5px;color:#e7d2ad;font-size:13px}.social a:hover{background:#29231a}.reviews{display:grid;gap:10px}.review{padding:14px;border:1px solid #39342b;border-radius:13px;background:#111}.review .stars{color:var(--gold);letter-spacing:2px}.review p{margin:8px 0;color:#e0dbd3;line-height:1.7}.review small{color:#9e968a}.foot{text-align:center;color:#81796f;font-size:12px;margin-top:24px}.notice{display:none;margin-top:12px;padding:12px;border-radius:12px;background:#242018;color:#e6d5b5;font-size:13px;line-height:1.7}
+@media(min-width:650px){.wrap{padding-top:35px}.hero{min-height:260px;padding:42px}.card{padding:28px}}
+</style>
+</head>
+<body><main class="wrap">
+<header class="brand"><div><div class="eyebrow">YOUR EVENT</div><div class="name">DJ RAMY NAGY</div><div class="sub">Wedding DJ · Event Entertainment</div></div><div class="mark">♪</div></header>
+<section class="hero"><small>YOUR NIGHT. YOUR MEMORIES.</small><h1>رأيك يفرق معانا ❤️</h1><p>شكراً إننا كنا جزء من يومكم المميز. شاركونا تجربتكم، وخلي رأيكم يساعدنا نصنع أفراح أجمل.</p></section>
+<section class="card"><h2>قيّم تجربتك من 10</h2><div class="hint">اختار الدرجة اللي تعبّر عن تجربتك مع DJ Ramy Nagy</div><div class="score" id="scores" aria-label="التقييم من عشرة"></div>
+<label for="couple">اسم العريس والعروسة (اختياري)</label><input id="couple" placeholder="مثال: أحمد & نور">
+<label for="event">تاريخ الفرح (اختياري)</label><input id="event" type="date">
+<label for="comment">احكيلنا رأيك في التجربة</label><textarea id="comment" placeholder="أكتر حاجة عجبتكم؟ الأغاني، التفاعل، أجواء الفرح..."></textarea>
+<label class="check"><input id="recommend" type="checkbox" checked><span>أرشّح DJ Ramy Nagy لأصحابي وأهلي ❤️</span></label>
+<label class="check"><input id="publish" type="checkbox"><span>موافق إن رأيي يظهر على صفحة التقييمات (من غير بيانات التواصل)</span></label>
+<button class="btn" id="submit">إرسال التقييم</button><div class="notice" id="notice"></div>
+<p class="hint">التقييمات المنشورة تظهر بعد مراجعتها. بياناتكم لا تُعرض علناً إلا بموافقتكم.</p></section>
+<section class="card"><h2>آراء العرسان ❤️</h2><div class="hint">كلمات من ناس شاركونا فرحتهم</div><div class="reviews" id="reviews"><div class="review"><div class="stars">★★★★★</div><p>لسه مستنيين أول تقييماتكم الجميلة هنا ✨</p><small>شاركنا رأيك بعد الفرح</small></div></div></section>
+<section class="card"><h2>تابعنا وشاركنا مع أصحابك</h2><div class="hint">خلي ذكريات الفرح مكملة، وابعت الصفحة لأي عريس أو عروسة بتجهز لفرحها.</div><div class="social"><a href="https://www.instagram.com/ramy_nagy89?xtok=djB1N2N4aWVsanc0" target="_blank" rel="noopener">Instagram ↗</a><a href="https://www.facebook.com/share/1CdUL1B9LM/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/search?q=DJ%20Ramy%20Nagy" target="_blank" rel="noopener">TikTok ↗</a></div><button class="btn" id="share">شارك الصفحة مع أصحابك</button></section>
+<footer class="foot">DJ RAMY NAGY · YOUR EVENT<br>Made with love for your special day ✦</footer>
+</main>
+<script>
+const scoreBox=document.getElementById('scores');let score=0;
+for(let i=1;i<=10;i++){const b=document.createElement('button');b.textContent=i;b.type='button';b.setAttribute('aria-label',`تقييم ${i} من 10`);b.onclick=()=>{score=i;[...scoreBox.children].forEach((x,j)=>x.classList.toggle('active',j<i));};scoreBox.appendChild(b)}
+const notice=document.getElementById('notice');function show(msg){notice.style.display='block';notice.textContent=msg}
+document.getElementById('share').onclick=async()=>{const data={title:'DJ Ramy Nagy | تقييم الفرح',text:'شارك تجربتك مع DJ Ramy Nagy ❤️',url:location.href};try{if(navigator.share)await navigator.share(data);else{await navigator.clipboard.writeText(location.href);show('تم نسخ رابط الصفحة. ابعته لأصحابك ❤️')}}catch(e){}};
+document.getElementById('submit').onclick=async()=>{if(!score){show('اختار تقييمك من 1 إلى 10 الأول ❤️');return}const payload={score,name:document.getElementById('couple').value.trim(),date:document.getElementById('event').value,comment:document.getElementById('comment').value.trim(),recommend:document.getElementById('recommend').checked,publish:document.getElementById('publish').checked};
+if(!payload.comment){show('اكتب رأيك في التجربة عشان نقدر نستفيد منه ❤️');return}
+const endpoint='PASTE_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE';
+if(endpoint.startsWith('https://script.google.com/')){try{await fetch(endpoint,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});show('شكراً لتقييمك! وصلنا رأيك ❤️');document.getElementById('submit').disabled=true;return}catch(e){show('تعذر إرسال التقييم. جرّب مرة أخرى أو تواصل معنا عبر السوشيال ميديا.');return}}
+show('الصفحة جاهزة للتصميم، لكن استقبال التقييمات على Google Sheets يحتاج ربطها برابط Apps Script الخاص بك. لم يتم إرسال أو حفظ تقييم حتى الآن.');
+};
+</script></body></html>
